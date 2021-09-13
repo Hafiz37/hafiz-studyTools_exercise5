@@ -1,3 +1,5 @@
+alert('anda bisa memasukkan \n username github anda di navbar.,.!')
+
 function cariApi(){
     let cariUsername =document.getElementById('cariUsername').value
     // let cariUsername = prompt('kosongkan atau anda juga bisa memasukkan username github anda')
@@ -52,18 +54,18 @@ function cariApi(){
                 alamat.innerHTML = `sekarang saya tinggal di ${result.location}`
             }
 
-            // repo publik
-            let repoPublik = document.getElementById('repoPublik-GitHub')
-            repoPublik.innerHTML = `repository public = ${result.public_repos}`
+          // repo publik
+          let repoPublik = document.getElementById('repoPublik-GitHub')
+          repoPublik.innerHTML = `${result.public_repos} <br>repository public`
 
-            // followers
-            let followers = document.getElementById('followers-GitHub')
-            followers.innerHTML =  "followers = "  + result.followers
-            
-            
-            // followers
-            let following = document.getElementById('following-GitHub')
-            following.innerHTML =  "following = "  + result.following
+          // followers
+          let followers = document.getElementById('followers-GitHub')
+          followers.innerHTML =  `${result.followers} <br>followers`  
+          
+          
+          // followers
+          let following = document.getElementById('following-GitHub')
+          following.innerHTML =  `${result.following} <br>following`  
 
 
             let urlGithub = document.getElementById('url-GitHub')

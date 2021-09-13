@@ -13,6 +13,22 @@ section#namaFoto img{
     border: 4px solid white;
     border-radius: 9999px;
     margin-top: 40px;
+    margin-right: -2rem;
+}
+
+section#namaFoto img.ilustrasi1{
+    width: 700px;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    margin-top:0;
+    position: relative;
+    left: -92px;
+}
+
+section#namaFoto #nama-GitHub{
+    z-index: 999;
+    width: 118%;
 }
 
 section#aboutMe p{
