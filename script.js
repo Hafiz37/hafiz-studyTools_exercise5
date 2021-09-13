@@ -1,11 +1,13 @@
-alert('anda bisa memasukkan \n username github anda di navbar.,.!')
+alert('anda bisa memasukkan \n  username github anda di navbar.,.!')
+// let apiGitHub = ('https://api.github.com/users/hafiz37')
+
 
 function cariApi(){
     let cariUsername =document.getElementById('cariUsername').value
     // let cariUsername = prompt('kosongkan atau anda juga bisa memasukkan username github anda')
 
 
-    let apiGitHub = ('https://api.github.com/users/hafiz37')
+    // let apiGitHub = ('https://api.github.com/users/hafiz37')
 
     if(cariUsername == '' || cariUsername == null){
         apiGitHub = ('https://api.github.com/users/hafiz37')
@@ -21,33 +23,31 @@ function cariApi(){
             
             // link di navbar
             let linkGithub = document.getElementById('brand-navbar')
-            let username = document.getElementById('username-GitHub')
+            let username = document.getElementById('usernameGithub')
             linkGithub.href = result.html_url
             username.innerHTML = result.login
 
             // foto profile
             let image = document.createElement("img")
             image.src = result.avatar_url
-            document.getElementById('avatar-GitHub').innerHTML = ''
-            let avatar = document.getElementById('avatar-GitHub').appendChild(image)
+            document.getElementById('avatarGithub').innerHTML = ''
+            let avatar = document.getElementById('avatarGithub').appendChild(image)
 
-            // let avatar = document.getElementById('avatar-GitHub')
-            // avatar.appendChild = image.src
 
             // nama
-            let nama = document.getElementById('nama-GitHub')
+            let nama = document.getElementById('namaGithub')
             nama.innerHTML = result.name
 
             // id github
-            let id = document.getElementById('id-GitHub')
+            let id = document.getElementById('idGithub')
             id.innerHTML ='id : ' + result.id
 
             // about me
-            let bio = document.getElementById('bio-GitHub')
+            let bio = document.getElementById('bioGithub')
             bio.innerHTML = `" ${result.bio} "`  
 
             // alamat
-            let alamat = document.getElementById('alamat-GitHub')
+            let alamat = document.getElementById('alamatGithub')
             if(alamat == null || alamat == ''){
                 alamat.innerHTML = `sekarang saya tinggal di sini`
             } else {
@@ -55,16 +55,16 @@ function cariApi(){
             }
 
           // repo publik
-          let repoPublik = document.getElementById('repoPublik-GitHub')
+          let repoPublik = document.getElementById('repoPublikGithub')
           repoPublik.innerHTML = `${result.public_repos} <br>repository public`
 
           // followers
-          let followers = document.getElementById('followers-GitHub')
+          let followers = document.getElementById('followersGithub')
           followers.innerHTML =  `${result.followers} <br>followers`  
           
           
           // followers
-          let following = document.getElementById('following-GitHub')
+          let following = document.getElementById('followingGithub')
           following.innerHTML =  `${result.following} <br>following`  
 
 
@@ -120,29 +120,29 @@ function cariApi(){
             
             // link di navbar
             let linkGithub = document.getElementById('brand-navbar')
-            let username = document.getElementById('username-GitHub')
+            let username = document.getElementById('usernameGithub')
             linkGithub.href = result.html_url
             username.innerHTML = result.login
 
             // foto profile
             let image = document.createElement("img")
             image.src = result.avatar_url
-            let avatar = document.getElementById('avatar-GitHub').appendChild(image)
+            let avatar = document.getElementById('avatarGithub').appendChild(image)
 
             // nama
-            let nama = document.getElementById('nama-GitHub')
+            let nama = document.getElementById('namaGithub')
             nama.innerHTML = result.name
 
             // id github
-            let id = document.getElementById('id-GitHub')
+            let id = document.getElementById('idGithub')
             id.innerHTML ='id : ' + result.id
 
             // about me
-            let bio = document.getElementById('bio-GitHub')
+            let bio = document.getElementById('bioGithub')
             bio.innerHTML = `" ${result.bio} "`  
 
             // alamat
-            let alamat = document.getElementById('alamat-GitHub')
+            let alamat = document.getElementById('alamatGithub')
             if(alamat == null || alamat == ''){
                 alamat.innerHTML = `sekarang saya tinggal di sini`
             } else {
@@ -150,16 +150,16 @@ function cariApi(){
             }
 
             // repo publik
-            let repoPublik = document.getElementById('repoPublik-GitHub')
+            let repoPublik = document.getElementById('repoPublikGithub')
             repoPublik.innerHTML = `${result.public_repos} <br>repository public`
 
             // followers
-            let followers = document.getElementById('followers-GitHub')
+            let followers = document.getElementById('followersGithub')
             followers.innerHTML =  `${result.followers} <br>followers`  
             
             
             // followers
-            let following = document.getElementById('following-GitHub')
+            let following = document.getElementById('followingGithub')
             following.innerHTML =  `${result.following} <br>following`  
 
 
